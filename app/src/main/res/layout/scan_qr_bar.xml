@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scan_qr_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_margin="20dp"
+        android:text="RAG Attendance"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/scanner"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="scanQR"
+        android:text="QR"
+        android:textSize="40dp"
+        android:height="200dp"
+        android:textStyle="bold"
+        android:layout_marginTop="90dp">
+    </Button>
+
+    <!--
+    <Button
+        android:id="@+id/scanner2"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="scanBar"
+        android:text="Bar Code"
+        android:textSize="40dp"
+        android:height="200dp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible">
+    </Button>
+-->
+    <Button
+        android:id="@+id/quit_"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:onClick="quit_"
+        android:text="QUIT"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:height="200dp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp" />
+</LinearLayout>

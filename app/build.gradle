@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias '.keystore'
+            keyPassword 'valbano1'
+            storeFile file('C:/Users/f6feizbakhsh/mystore.keystore')
+            storePassword 'valbano1'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId "com.rag.android.abcd"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 22
+        versionName 'Remove auto-focus'
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+
+
+
+
+
+
+
+
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'junit:junit:4.12'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    //compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+}

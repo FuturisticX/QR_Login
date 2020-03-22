@@ -1,0 +1,107 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+    android:onClick="
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:id="@+id/upload"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Photo"
+        android:id="@+id/check_master"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/upload"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily In/Out"
+        android:id="@+id/check_detail"
+        android:checked="false"
+        android:layout_below="@+id/check_master"
+        android:layout_toEndOf="@+id/upload"
+        android:layout_row="0"
+        android:layout_column="2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:id="@+id/quit_"
+        android:layout_marginStart="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/check_master"
+        android:layout_row="0"
+        android:layout_column="3" />
+    </TableRow>
+    <ImageView
+        android:layout_width="698dp"
+        android:layout_height="336dp"
+        android:id="@+id/imageView"  />
+
+
+
+
+        <Button
+                android:text="Click"
+                android:id="@+id/take_photo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <CalendarView android:id="@+id/calendarView"
+        android:layout_column="0"
+        android:layout_height="332dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+</TableLayout>
